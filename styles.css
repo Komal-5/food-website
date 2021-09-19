@@ -1,0 +1,84 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+
+}
+.hero_para{
+  font-weight:600;
+  font-size: 1rem;
+  line-height:1.5rem;
+}
+label{
+  margin-left:1.5rem;
+  display:inline-block;
+  margin-bottom:0.6rem;
+  font-weight:800;
+}
+/*Class selectors */
+.hero_image{
+  color:#fff;
+  background-image:url('food1.jpg') ;
+  background-repeat: no-repeat;
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height:100vh;
+  margin:0;
+  position:relative;
+}
+.hero_wrapper{
+  position:absolute;
+  top:50%;
+  left:50%;
+  /*still the element does not centre itself as it does not consider its own width.For that we do the following*/
+  transform:translate(-50%,-50%);
+
+}
+.heading1{
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-size:2.5rem;
+  text-align:center;
+}
+.post_code{
+  margin: 0 auto;
+  width:80%;
+  display:block;
+  text-align:center;
+  border-radius:2rem;
+  padding:0.6rem;
+  border:none;
+}
+/*button by default is an inline element*/
+.find-food-button{
+  padding: 0.6rem;
+  display :block;
+  text-align:center;
+  margin:0 auto;
+  width:20%;
+  background:#21AA93;
+  border:none;
+  color:#fff;
+  border-radius:0.3rem;
+
+}
+/* product */
+.product{
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:3%;
+
+}
+.product-list-item{
+  float:left;
+  width:30%;
+  margin-left:1rem;
+}
+/* As we can see food1 img leads out so to solve this we use .img-responsive UTILITY CLASS */
+.img-responsive{
+  max-width:100%;
+}
+/* I want to make it responsive so at 700px and below the images will occupy 100% of the viewport */
+/* media means devices :so devices with screen size 700px and below will have 100% display rather than 3cols in 1 row */
+@media screen and (max-width:700px) {
+  .product-list-item{
+    width:100%;
+  }
+}
